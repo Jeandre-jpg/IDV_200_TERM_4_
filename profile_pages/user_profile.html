@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/user_profile.css">
+    <link rel="stylesheet" href="../css/user_profile.css">
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/b1c8596178.js" crossorigin="anonymous"></script>
@@ -91,31 +91,106 @@
 
 
     <!-- * MAIN CONTENT -->
-    <div class="">
 
-        <div class="profile">
+    <div class="columns is-desktop">
 
-            <figure class="image is-256x256">
+        <!-- PROFILE INFO -->
+        <div class="column is-one-quarter profile">
+
+            <figure class="image is-1x1 profile-pic">
                 <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
             </figure>
 
-            <br>
-            <br>
+            <h1 class="title is-3">John Smith</h1>
+            <h1 class="subtitle is-4">Johnsmith@gmail.com</h1>
 
-            <h1 class="title is-3">Jane Doe</h1>
-            <h1 class="subtitle is-5">Ace Blogger</h1>
-
-            <br>
-
-            <button class="button is-info edit">
+            <button class="button is-info edit-btn">
                 <strong>
-                    Edit My Profile
+                    Edit my Profile
                 </strong>
             </button>
 
         </div>
 
-    </div> <!-- * END OF MAIN CONTENT -->
+        <!-- COMMENTS HISTORY -->
+        <div class="column comments">
+
+            <div class="container">
+                <h1 class="title is-3 is-size-6-mobile">Your comment history</h1>
+
+                <!-- ONE COMMENT -->
+                <div class="card comment">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-96x96">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Apple offers fixes for battery drain and...</strong><small>12 August
+                                            2020</small>
+                                        <br>
+                                        I will always support Apple, they always fix the problems in their updates!
+                                    </p>
+                                </div>
+
+                                <div class="level-left">
+                                    <button class="level-item button is-info">
+                                        See more
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+                                <button class="delete"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE COMMENT -->
+                <div class="card comment">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-96x96">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Apple offers fixes for battery drain and...</strong><small>12 August
+                                            2020</small>
+                                        <br>
+                                        I will always support Apple, they always fix the problems in their updates!
+                                    </p>
+                                </div>
+
+                                <div class="level-left">
+                                    <button class="level-item button is-info">
+                                        See more
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+                                <button class="delete"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- * END OF MAIN CONTENT -->
 
 
     <!-- * FOOTER -->

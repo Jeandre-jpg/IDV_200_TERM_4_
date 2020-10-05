@@ -1,0 +1,92 @@
+/*
+    UNIVERSAL
+*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9ef;
+}
+
+
+/*
+    NAVBAR
+*/
+.navbar {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-item, .navbar-link {
+    color: #fff;
+    font-size: 12px;
+}
+
+.navbar-item:hover {
+    font-weight: bold;
+}
+
+.navbar-drop {
+    color: #000;
+}
+
+.button {
+    font-size: 12px;
+}
+
+
+/*
+    BLOG
+*/
+.blog {
+    background-color: #fff;
+    padding: 50px 40px;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.title {
+    padding-bottom: 10px;
+    color: #0c91e8;
+}
+
+.date {
+    color: lightgrey;
+}
+
+/*
+    COMMENTS
+*/
+.comments {
+    background-color: #fff;
+    padding: 0 40px;
+    padding-bottom: 50px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+.submit {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+/*
+    FOOTER
+*/
+footer {
+    height: 30px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 8px;
+}

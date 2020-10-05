@@ -18,15 +18,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/blog_page.css">
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b1c8596178.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- * NAVBAR -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            <a class="navbar-item" href="#">
+                <i class="fas fa-desktop"></i>
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -44,26 +48,26 @@
                 </a>
 
                 <a class="navbar-item">
-                    Documentation
+                    Feed
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
-                        More
+                        My Profile
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
+                        <a class="navbar-item navbar-drop">
+                            Profile
                         </a>
-                        <a class="navbar-item">
-                            Jobs
+                        <a class="navbar-item navbar-drop">
+                            Create Blog
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item navbar-drop">
                             Contact
                         </a>
                         <hr class="navbar-divider">
-                        <a class="navbar-item">
+                        <a class="navbar-item navbar-drop">
                             Report an issue
                         </a>
                     </div>
@@ -73,17 +77,139 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-link">
                             <strong>Sign up</strong>
                         </a>
-                        <a class="button is-light">
+                        <a class="button">
                             Log in
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </nav> <!-- END OF NAVBAR -->
+    </nav> <!-- * END OF NAVBAR -->
+
+
+    <!-- * MAIN CONTENT -->
+    <div class="container">
+
+        <div class="blog">
+
+            <h1 class="title is-3">Apple offers fixes for battery drain and missing data in iOS 14 and WatchOS 7</h1>
+            <p class="subtitle is-5">By Jane Doe</p>
+
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by1">
+                        <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+                            alt="Apple Watch">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <time class="date" datetime="2020-10-04">04 October 2020 | 6:00PM</time>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        If you've been struggling with a fresh set of technical issues since the mid-September launch of
+                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try.
+
+                        <br />
+                        <br />
+
+                        In a newly published support article, Apple runs through a list of issues that users of the new
+                        operating system updates have faced in recent weeks. These include missing or inaccurate data in
+                        health apps on iOS and WatchOS, those same apps not loading, and increased battery drain on
+                        iPhone and Apple Watch.
+
+                        <br />
+                        <br />
+
+                        In all, there are seven bullet-pointed issues listed in the support article. Apple notes that
+                        users experiencing two or more of those issues should try a fairly involved set of steps that
+                        could lead to a fix. Note that the process includes a system reset for your iPhone, so be ready
+                        for that.
+
+                        <br />
+                        <br />
+
+                        SEE ALSO: <a>Apple Watch Series 6 review: More health data but not much to do with it</a>
+
+                        <br />
+                        <br />
+
+                        Apple asks users to unpair their phone and watch, then create an iCloud backup – specifically
+                        including your health data. Once that's done, you'll want to erase all settings and content from
+                        your iPhone, after which you're clear to restore your backed up iPhone and Apple Watch data.
+
+                        <br />
+                        <br />
+
+                        According to Apple, following these steps should "prevent future data loss." You can find the
+                        specifics of each step laid out in much more detail in the support article.
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comments">
+
+            <h1 class="title is-3">Comments</h1>
+
+            <!-- ONE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="https://bulma.io/images/placeholders/64x64.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-5">John Smith</p>
+                            <p class="subtitle is-6">@johnsmith_applefanboy</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        I will support Apple no matter what, they always fix what is broken.
+                        <a href="#">#apple</a> <a href="#">#iphone</a>
+                        <br>
+                        <time class="date" datetime="2020-10-04">04 October 2020 | 6:00PM</time>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WRITE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+
+                    <h1 class="subtitle is-4">Write a comment</h1>
+
+                    <div class="content">
+                        <form>
+                            <textarea class="textarea" placeholder="Write a comment"></textarea>
+                            <button class="button is-link submit">
+                                <strong>Submit</strong>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- END OF COMMENT -->
+
+    </div> <!-- * END OF MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Open Window © All rights reserved</p>
+    </footer> <!-- * END OF FOOTER -->
 
 </body>
 

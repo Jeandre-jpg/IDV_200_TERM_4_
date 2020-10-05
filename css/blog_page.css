@@ -11,6 +11,10 @@ body {
     background-color: #f9f9f9ef;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 
 /*
     NAVBAR

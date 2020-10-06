@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- WEBSITE TITLE -->
-    <title>User Profile</title>
+    <title>Author Profile</title>
 
     <!-- FILE LINKS -->
 
@@ -101,96 +101,200 @@
                 <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
             </figure>
 
-            <h1 class="title is-3">John Smith</h1>
-            <h1 class="subtitle is-4">Johnsmith@gmail.com</h1>
+            <h1 class="title is-3">Jane Doe</h1>
+            <h1 class="subtitle is-4">JaneD@gmail.com</h1>
 
-            <button class="button is-info edit-btn">
-                <strong>
-                    Edit my Profile
-                </strong>
-            </button>
+            <h1 class="subtitle is-5">Comments History</h1>
 
-        </div>
-
-        <!-- COMMENTS HISTORY -->
-        <div class="column comments">
-
-            <div class="container">
-                <h1 class="title is-3 is-size-6-mobile">Your comment history</h1>
-
-                <!-- ONE COMMENT -->
-                <div class="card comment">
-                    <div class="card-content">
-                        <div class="media">
-                            <figure class="media-left">
-                                <p class="image is-96x96">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+            <!-- COMMENT HISTORY-->
+            <!-- ONE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+                    <div class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <small>12 August 2020</small>
+                                    <br>
+                                    <strong>Apple offers fixes for battery...</strong><br>
+                                    I will always support Apple, they...
                                 </p>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Apple offers fixes for battery drain and...</strong><small>12 August
-                                            2020</small>
-                                        <br>
-                                        I will always support Apple, they always fix the problems in their updates!
-                                    </p>
-                                </div>
-
-                                <div class="level-left">
-                                    <button class="level-item button is-info">
-                                        See more
-                                    </button>
-                                </div>
-
                             </div>
-                            <div class="media-right">
-                                <button class="delete"></button>
-                            </div>
+
+                        </div>
+                        <div class="media-right">
+                            <button class="delete"></button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- ONE COMMENT -->
-                <div class="card comment">
-                    <div class="card-content">
-                        <div class="media">
-                            <figure class="media-left">
-                                <p class="image is-96x96">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+            <!-- ONE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+                    <div class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <small>12 August 2020</small>
+                                    <br>
+                                    <strong>Apple offers fixes for battery...</strong><br>
+                                    I will always support Apple, they...
                                 </p>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                        <strong>Apple offers fixes for battery drain and...</strong><small>12 August
-                                            2020</small>
-                                        <br>
-                                        I will always support Apple, they always fix the problems in their updates!
-                                    </p>
-                                </div>
-
-                                <div class="level-left">
-                                    <button class="level-item button is-info">
-                                        See more
-                                    </button>
-                                </div>
-
                             </div>
-                            <div class="media-right">
-                                <button class="delete"></button>
-                            </div>
+
+                        </div>
+                        <div class="media-right">
+                            <button class="delete"></button>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <button class="button is-info comments-btn">See More Comments</button>
+
+        </div> <!-- END OF PROFILE INFO -->
+
+
+
+
+        <!-- BLOG HISTORY -->
+        <div class="column blogs">
+
+            <div class="container button-container">
+                <button class="button is-info is-normal">Create a New Blog</button>
+                <button class="button is-outlined is-normal">Edit my Profile</button>
 
             </div>
 
-        </div>
+            <div class="container blog-container">
 
-    </div>
+                <h1 class="title is-3 is-size-6-mobile">Your blog posts</h1>
 
-    <!-- * END OF MAIN CONTENT -->
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div> <!-- END OF BLOG HISTORY -->
+
+    </div> <!-- * END OF MAIN CONTENT -->
 
 
     <!-- * FOOTER -->

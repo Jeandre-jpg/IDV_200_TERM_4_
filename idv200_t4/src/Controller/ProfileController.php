@@ -9,31 +9,31 @@ class ProfileController extends AbstractController
     public function viewProfile($id = "1")
     {
     $userId = (int) $id;
-    $mark = new User();
+    $jane = new User();
 
-    $mark->setId(1);
-    $mark->setName("Mark");
+    $jane->setId(1);
+    $jane->setName("Jane");
 
-    $grace = new User();
+    $john = new User();
 
-    $grace->setId(2);
-    $grace->setName("Grace");
+    $john->setId(2);
+    $john->setName("John");
 
-    $bill = new User();
+    $bob = new User();
 
-    $bill->setId(3);
-    $bill->setName("Bill");
+    $bob->setId(3);
+    $bob->setName("Bob");
 
-    $dennis = new User();
+    $sam = new User();
 
-    $dennis->setId(4);
-    $dennis->setName("Dennis");
+    $sam->setId(4);
+    $sam->setName("Sam");
 
-    $users = [$mark, $grace, $bill, $dennis];
+    $users = [$jane, $john, $bob, $sam];
     return $this->render($view, $model);
 
     $model = array();
-    $view = './templates/profile.html.twig';
+    $view = '/profile.html.twig';
     
     foreach ($users as $user) {
         if ($userId === $user->getId()) {

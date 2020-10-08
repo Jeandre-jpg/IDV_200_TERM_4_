@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+    {% block body %}
+    <div class="row">
+            This is the profile page of {{ user.name }} who has {{ user.clients|length }} clients.
+    </div>
+<div class="row">
+    <ul>
+        {% for client in user.client %}
+            <li>{{ client.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

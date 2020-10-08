@@ -28,8 +28,31 @@ body{
     color: #000;
 }
 
-footer {
+.comments {
+    background-color: #fff;
+    margin-top: 2vw;
+}
+
+.media{
+    margin-left: -3.5vw;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+.submit {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.social{
     height: 30px;
+    display: inline-block;
+}
+
+footer {
+    height: auto;
     width: 100%;
     background-color: #000;
     color: #fff;

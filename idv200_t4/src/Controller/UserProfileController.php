@@ -5,36 +5,36 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
-class ProfileController extends AbstractController
+class UserProfileController extends AbstractController
 {
     /**
-     * @Route("/profile/{id}",name="profile_view")
+     * @Route("/userProfile/{id}",name="user_profile_view")
      */
     public function viewProfile($id = "1")
     {
     $userId = (int) $id;
 
-    $jane = new User();
-    $jane->setId(1);
-    $jane->setName("Jane");
+    $jim = new User();
+    $jim->setId(1);
+    $jim->setName("Jim");
 
-    $john = new User();
-    $john->setId(2);
-    $john->setName("John");
+    $harry = new User();
+    $harry->setId(2);
+    $harry->setName("Harry");
 
-    $bob = new User();
-    $bob->setId(3);
-    $bob->setName("Bob");
+    $sarah = new User();
+    $sarah->setId(3);
+    $sarah->setName("Sarah");
 
-    $sam = new User();
-    $sam->setId(4);
-    $sam->setName("Sam");
+    $kate = new User();
+    $kate->setId(4);
+    $kate->setName("Kate");
 
-    $users = [$jane, $john, $bob, $sam];
+    $users = [$jim, $harry, $sarah, $kate];
     
 
     $model = array();
-    $view = '/profile.html.twig';
+    $view = '/userProfile.html.twig';
     
     foreach ($users as $user) {
         if ($userId === $user->getId()) {

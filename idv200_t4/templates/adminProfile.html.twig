@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+    {% block body %}
+        <!-- * MAIN CONTENT -->
+
+        <div class="columns is-desktop">
+
+            <!-- PROFILE INFO -->
+            <div class="column is-one-third profile">
+
+                <figure class="image is-1x1 profile-pic">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                </figure>
+
+                <h1 class="title is-3">{{ user.name }}</h1>
+                <h1 class="subtitle is-4">{{ user.name }}@gmail.com</h1>
+                <h1 class="subtitle is-5">who has {{ user.clients|length }} clients.
+
+                <button class="button is-info edit-btn">
+                    <strong>
+                        Edit my Profile
+                    </strong>
+                </button>
+
+            </div>
+
+
+        </div> 
+        <!-- * END OF MAIN CONTENT -->
+    {% endblock %}

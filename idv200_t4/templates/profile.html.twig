@@ -1,0 +1,157 @@
+{% extends "base.html.twig" %}
+
+    {% block stylesheets %}
+    <link rel="stylesheet" href="{{ 'css/profile.css' }}">
+    {% endblock %}
+
+    {% block body %}
+
+    <!-- * MAIN CONTENT -->
+    <div class="columns is-desktop">
+
+        <!-- PROFILE INFO -->
+        <div class="column is-one-quarter profile">
+
+            <figure class="image is-1x1 profile-pic">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+            </figure>
+
+            <h1 class="title is-3">{{ user.username }}</h1>
+            <h1 class="subtitle is-4">JaneD@gmail.com</h1>
+
+            <h1 class="subtitle is-5">Comments History</h1>
+
+        </div> <!-- END OF PROFILE INFO -->
+
+
+
+
+        <!-- BLOG HISTORY -->
+        <div class="column blogs">
+
+            <div class="container button-container">
+                <button class="button is-info is-normal">Create a New Blog</button>
+                <button class="button is-outlined is-normal">Edit my Profile</button>
+
+            </div>
+
+            <div class="container blog-container">
+
+                <h1 class="title is-3 is-size-6-mobile">Your blog posts</h1>
+
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONE BLOG -->
+                <div class="card blog-card">
+                    <div class="card-content">
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-128x128">
+                                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Apple offers fixes for battery drain and missing data in iOS
+                                        14 and WatchOS 7</h1>
+                                    <h1 class="subtitle is-6">12 August 2020</h1>
+                                    <p>
+                                        If you've been struggling with a fresh set of technical issues since the
+                                        mid-September launch of
+                                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try...
+
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="media-right">
+
+                                <div class="has-dropdown is-hoverable">
+                                    <a href="">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div> <!-- END OF BLOG HISTORY -->
+
+    </div> <!-- * END OF MAIN CONTENT -->
+        
+    {% endblock %}

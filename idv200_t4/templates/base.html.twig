@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    <!-- BULMA -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    {% block stylesheets %}{% endblock %}
-    <!-- CSS -->
-    <link rel="stylesheet" href="/author_profile.css">
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/b1c8596178.js" crossorigin="anonymous"></script>
+        <!-- META TAGS -->
+        <meta charset="UTF-8">
+
+        <!-- TITLE -->
+        <title>{% block title %}Tech Log{% endblock %}</title>
+
+        <!-- BULMA -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/b1c8596178.js" crossorigin="anonymous"></script>
+
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ 'css/base.css' }}">
+        {% endblock %}
+
 </head>
 <body>
     <!-- * NAVBAR -->

@@ -7,9 +7,11 @@ class HomeController extends AbstractController
 {
     public function helloWorld()
         {
-            return new Response(
-                '<html><body><h1>Hello World</h1></body></html>'
-            );
+
+            $view = 'base.html.twig';
+
+            return $this->render($view);
+
         }
 }
 ?>

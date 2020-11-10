@@ -1,0 +1,141 @@
+{% extends 'base.html.twig' %}
+
+    {% block stylesheets %}
+    <link rel="stylesheet" href="{{ 'css/base.css' }}">
+    <link rel="stylesheet" href="{{ 'css/blog.css' }}">
+    {% endblock %}
+
+    {% block body %}
+
+    <div class="container">
+
+        <div class="blog">
+
+            <h1 class="title is-3">Apple offers fixes for battery drain and missing data in iOS 14 and WatchOS 7</h1>
+            <p class="subtitle is-5">By Jane Doe</p>
+
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by1">
+                        <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+                            alt="Apple Watch">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <time class="date" datetime="2020-10-04">04 October 2020 | 6:00PM</time>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        If you've been struggling with a fresh set of technical issues since the mid-September launch of
+                        iOS 14 and WatchOS 7, Apple's got some potential fixes for you to try.
+
+                        <br />
+                        <br />
+
+                        In a newly published support article, Apple runs through a list of issues that users of the new
+                        operating system updates have faced in recent weeks. These include missing or inaccurate data in
+                        health apps on iOS and WatchOS, those same apps not loading, and increased battery drain on
+                        iPhone and Apple Watch.
+
+                        <br />
+                        <br />
+
+                        In all, there are seven bullet-pointed issues listed in the support article. Apple notes that
+                        users experiencing two or more of those issues should try a fairly involved set of steps that
+                        could lead to a fix. Note that the process includes a system reset for your iPhone, so be ready
+                        for that.
+
+                        <br />
+                        <br />
+
+                        SEE ALSO: <a>Apple Watch Series 6 review: More health data but not much to do with it</a>
+
+                        <br />
+                        <br />
+
+                        Apple asks users to unpair their phone and watch, then create an iCloud backup – specifically
+                        including your health data. Once that's done, you'll want to erase all settings and content from
+                        your iPhone, after which you're clear to restore your backed up iPhone and Apple Watch data.
+
+                        <br />
+                        <br />
+
+                        According to Apple, following these steps should "prevent future data loss." You can find the
+                        specifics of each step laid out in much more detail in the support article.
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- * COMMENTS -->
+        <div class="comments">
+
+            <h1 class="title is-3">Comments</h1>
+
+            <!-- ONE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+                    <div class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>John Smith</strong> <small>@johnsmith_AppleFanboy</small> <small>31m
+                                        ago</small>
+                                    <br>
+                                    I will always support Apple, they always fix the problems in their updates!
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item">
+                                        <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="media-right">
+                            <button class="delete"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WRITE COMMENT -->
+            <div class="card comment">
+                <div class="card-content">
+
+                    <h1 class="subtitle is-4">Write a comment</h1>
+
+                    <div class="content">
+                        <form>
+                            <textarea class="textarea" placeholder="Write a comment..."></textarea>
+                            <button class="button is-info submit" type="submit">
+                                <strong>Submit</strong>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- * END OF COMMENTS -->
+
+    </div> <!-- * END OF MAIN CONTENT -->
+
+    {% endblock %}
